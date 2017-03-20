@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tag Index
-excerpt: "An archive of posts sorted by tag."
+title: Indice de Etiquetas
+excerpt: "Un archivo de artículos para proteger su web ordenados por etiquetas."
 search_omit: true
 ---
 

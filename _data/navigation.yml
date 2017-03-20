@@ -1,16 +1,16 @@
 # Site navigation links
 
-- title: About
-  url: /about/
+- title: Nosotros
+  url: https://seguridadweb.online/nosotros.html
 
-- title: Articles
-  url: /articles/
+- title: Artículos
+  url: /articulos/
 
 - title: Blog
   url: /blog/
 
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Search
+- title: Buscar
   url: /search/
+
+- title: Contacto
+  url: https://seguridadweb.online/contacto.html
