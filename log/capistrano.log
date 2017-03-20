@@ -1,0 +1,165 @@
+# Logfile created on 2017-03-20 04:22:21 -0300 by logger.rb/54072
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-20 04:22:21 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [00ac125b] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/tmp as app@eastberlin.seguridadweb.online
+ DEBUG [00ac125b] Command: /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/tmp
+  INFO [00ac125b] Finished in 7.280 seconds with exit status 0 (successful).
+ DEBUG Uploading /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh 0.0%
+  INFO Uploading /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh 100.0%
+  INFO [7e45a785] Running /usr/bin/env chmod 700 /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh as app@eastberlin.seguridadweb.online
+ DEBUG [7e45a785] Command: /usr/bin/env chmod 700 /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh
+  INFO [7e45a785] Finished in 0.992 seconds with exit status 0 (successful).
+  INFO [6817e08f] Running /usr/bin/env git ls-remote --heads https://github.com/lainventoria/so-simple-theme.git as app@eastberlin.seguridadweb.online
+ DEBUG [6817e08f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git ls-remote --heads https://github.com/lainventoria/so-simple-theme.git )
+ DEBUG [6817e08f] 	1de64ae8684362590172d4329db201d83b731216	refs/heads/develop
+b5c125b0499f756ad2de6ba3e95ea2d276c69d54	refs/heads/gh-pages
+dc5227eb94aceef77dadfff81138db628d91c776	refs/heads/master
+  INFO [6817e08f] Finished in 1.350 seconds with exit status 0 (successful).
+  INFO [bf19475a] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/shared /srv/http/blog.seguridadweb.online/releases as app@eastberlin.seguridadweb.online
+ DEBUG [bf19475a] Command: /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/shared /srv/http/blog.seguridadweb.online/releases
+  INFO [bf19475a] Finished in 0.528 seconds with exit status 0 (successful).
+ DEBUG [28e6109a] Running [ -f /srv/http/blog.seguridadweb.online/current/REVISION ] as app@eastberlin.seguridadweb.online
+ DEBUG [28e6109a] Command: [ -f /srv/http/blog.seguridadweb.online/current/REVISION ]
+ DEBUG [28e6109a] Finished in 0.533 seconds with exit status 1 (failed).
+ DEBUG [ef87d4cd] Running [ -f /srv/http/blog.seguridadweb.online/repo/HEAD ] as app@eastberlin.seguridadweb.online
+ DEBUG [ef87d4cd] Command: [ -f /srv/http/blog.seguridadweb.online/repo/HEAD ]
+ DEBUG [ef87d4cd] Finished in 0.518 seconds with exit status 1 (failed).
+ DEBUG [21013b39] Running if test ! -d /srv/http/blog.seguridadweb.online; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [21013b39] Command: if test ! -d /srv/http/blog.seguridadweb.online; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online'" 1>&2; false; fi
+ DEBUG [21013b39] Finished in 0.516 seconds with exit status 0 (successful).
+  INFO [a32fa211] Running /usr/bin/env git clone --mirror https://github.com/lainventoria/so-simple-theme.git /srv/http/blog.seguridadweb.online/repo as app@eastberlin.seguridadweb.online
+ DEBUG [a32fa211] Command: cd /srv/http/blog.seguridadweb.online && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git clone --mirror https://github.com/lainventoria/so-simple-theme.git /srv/http/blog.seguridadweb.online/repo )
+ DEBUG [a32fa211] 	Cloning into bare repository '/srv/http/blog.seguridadweb.online/repo'...
+  INFO [a32fa211] Finished in 5.156 seconds with exit status 0 (successful).
+ DEBUG [85ec4630] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [85ec4630] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [85ec4630] Finished in 0.519 seconds with exit status 0 (successful).
+  INFO [d74bfbfe] Running /usr/bin/env git remote update --prune as app@eastberlin.seguridadweb.online
+ DEBUG [d74bfbfe] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d74bfbfe] 	Fetching origin
+  INFO [d74bfbfe] Finished in 1.047 seconds with exit status 0 (successful).
+ DEBUG [35a600a5] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [35a600a5] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [35a600a5] Finished in 0.515 seconds with exit status 0 (successful).
+  INFO [175b67c0] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/releases/20170320072237 as app@eastberlin.seguridadweb.online
+ DEBUG [175b67c0] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/releases/20170320072237 )
+  INFO [175b67c0] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO [191b2bb1] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/http/blog.seguridadweb.online/releases/20170320072237 as app@eastberlin.seguridadweb.online
+ DEBUG [191b2bb1] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/http/blog.seguridadweb.online/releases/20170320072237 )
+  INFO [191b2bb1] Finished in 0.648 seconds with exit status 0 (successful).
+ DEBUG [2a0e1fd6] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [2a0e1fd6] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [2a0e1fd6] Finished in 0.516 seconds with exit status 0 (successful).
+ DEBUG [992d0aa1] Running /usr/bin/env git rev-list --max-count=1 master as app@eastberlin.seguridadweb.online
+ DEBUG [992d0aa1] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [992d0aa1] 	dc5227eb94aceef77dadfff81138db628d91c776
+ DEBUG [992d0aa1] Finished in 0.519 seconds with exit status 0 (successful).
+ DEBUG [e43f7647] Running if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072237; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072237'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [e43f7647] Command: if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072237; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072237'" 1>&2; false; fi
+ DEBUG [e43f7647] Finished in 0.513 seconds with exit status 0 (successful).
+  INFO [8a883a23] Running /usr/bin/env echo "dc5227eb94aceef77dadfff81138db628d91c776" >> REVISION as app@eastberlin.seguridadweb.online
+ DEBUG [8a883a23] Command: cd /srv/http/blog.seguridadweb.online/releases/20170320072237 && /usr/bin/env echo "dc5227eb94aceef77dadfff81138db628d91c776" >> REVISION
+  INFO [8a883a23] Finished in 0.971 seconds with exit status 0 (successful).
+  INFO [e194b252] Running /usr/bin/env ln -s /srv/http/blog.seguridadweb.online/releases/20170320072237 /srv/http/blog.seguridadweb.online/releases/current as app@eastberlin.seguridadweb.online
+ DEBUG [e194b252] Command: /usr/bin/env ln -s /srv/http/blog.seguridadweb.online/releases/20170320072237 /srv/http/blog.seguridadweb.online/releases/current
+  INFO [e194b252] Finished in 0.580 seconds with exit status 0 (successful).
+  INFO [5710b800] Running /usr/bin/env mv /srv/http/blog.seguridadweb.online/releases/current /srv/http/blog.seguridadweb.online as app@eastberlin.seguridadweb.online
+ DEBUG [5710b800] Command: /usr/bin/env mv /srv/http/blog.seguridadweb.online/releases/current /srv/http/blog.seguridadweb.online
+  INFO [5710b800] Finished in 0.525 seconds with exit status 0 (successful).
+ DEBUG [fc340bb2] Running /usr/bin/env ls -x /srv/http/blog.seguridadweb.online/releases as app@eastberlin.seguridadweb.online
+ DEBUG [fc340bb2] Command: /usr/bin/env ls -x /srv/http/blog.seguridadweb.online/releases
+ DEBUG [fc340bb2] 	20170320072237
+ DEBUG [fc340bb2] Finished in 0.516 seconds with exit status 0 (successful).
+ DEBUG [3550aa42] Running if test ! -d /srv/http/blog.seguridadweb.online/releases; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [3550aa42] Command: if test ! -d /srv/http/blog.seguridadweb.online/releases; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases'" 1>&2; false; fi
+ DEBUG [3550aa42] Finished in 0.516 seconds with exit status 0 (successful).
+  INFO [e4bcf050] Running /usr/bin/env echo "Branch master (at dc5227eb94aceef77dadfff81138db628d91c776) deployed as release 20170320072237 by a" >> /srv/http/blog.seguridadweb.online/revisions.log as app@eastberlin.seguridadweb.online
+ DEBUG [e4bcf050] Command: cd /srv/http/blog.seguridadweb.online/releases && /usr/bin/env echo "Branch master (at dc5227eb94aceef77dadfff81138db628d91c776) deployed as release 20170320072237 by a" >> /srv/http/blog.seguridadweb.online/revisions.log
+  INFO [e4bcf050] Finished in 0.516 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-20 04:28:45 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [20641db2] Running [ -d $HOME/.rbenv/versions/2.3.3 ] as app@eastberlin.seguridadweb.online
+ DEBUG [20641db2] Command: [ -d $HOME/.rbenv/versions/2.3.3 ]
+ DEBUG [20641db2] Finished in 6.531 seconds with exit status 0 (successful).
+  INFO [558972f1] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/tmp as app@eastberlin.seguridadweb.online
+ DEBUG [558972f1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/tmp )
+  INFO [558972f1] Finished in 3.789 seconds with exit status 0 (successful).
+ DEBUG Uploading /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh 0.0%
+  INFO Uploading /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh 100.0%
+  INFO [8183c92c] Running /usr/bin/env chmod 700 /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh as app@eastberlin.seguridadweb.online
+ DEBUG [8183c92c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env chmod 700 /srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh )
+  INFO [8183c92c] Finished in 0.581 seconds with exit status 0 (successful).
+  INFO [792864a3] Running /usr/bin/env git ls-remote --heads https://github.com/lainventoria/so-simple-theme.git as app@eastberlin.seguridadweb.online
+ DEBUG [792864a3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git ls-remote --heads https://github.com/lainventoria/so-simple-theme.git )
+ DEBUG [792864a3] 	1de64ae8684362590172d4329db201d83b731216	refs/heads/develop
+b5c125b0499f756ad2de6ba3e95ea2d276c69d54	refs/heads/gh-pages
+dc5227eb94aceef77dadfff81138db628d91c776	refs/heads/master
+  INFO [792864a3] Finished in 1.189 seconds with exit status 0 (successful).
+  INFO [c008fb73] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/shared /srv/http/blog.seguridadweb.online/releases as app@eastberlin.seguridadweb.online
+ DEBUG [c008fb73] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/shared /srv/http/blog.seguridadweb.online/releases )
+  INFO [c008fb73] Finished in 0.547 seconds with exit status 0 (successful).
+ DEBUG [58f5f6ea] Running [ -f /srv/http/blog.seguridadweb.online/current/REVISION ] as app@eastberlin.seguridadweb.online
+ DEBUG [58f5f6ea] Command: [ -f /srv/http/blog.seguridadweb.online/current/REVISION ]
+ DEBUG [58f5f6ea] Finished in 0.544 seconds with exit status 0 (successful).
+ DEBUG [867d6def] Running /usr/bin/env cat /srv/http/blog.seguridadweb.online/current/REVISION 2>/dev/null as app@eastberlin.seguridadweb.online
+ DEBUG [867d6def] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env cat /srv/http/blog.seguridadweb.online/current/REVISION 2>/dev/null )
+ DEBUG [867d6def] 	dc5227eb94aceef77dadfff81138db628d91c776
+ DEBUG [867d6def] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG [cea7159d] Running [ -f /srv/http/blog.seguridadweb.online/repo/HEAD ] as app@eastberlin.seguridadweb.online
+ DEBUG [cea7159d] Command: [ -f /srv/http/blog.seguridadweb.online/repo/HEAD ]
+ DEBUG [cea7159d] Finished in 0.558 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /srv/http/blog.seguridadweb.online/repo
+ DEBUG [a5a53f0f] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [a5a53f0f] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [a5a53f0f] Finished in 0.561 seconds with exit status 0 (successful).
+  INFO [666dbb29] Running /usr/bin/env git remote update --prune as app@eastberlin.seguridadweb.online
+ DEBUG [666dbb29] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [666dbb29] 	Fetching origin
+  INFO [666dbb29] Finished in 1.157 seconds with exit status 0 (successful).
+ DEBUG [4f3d9f99] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [4f3d9f99] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [4f3d9f99] Finished in 0.549 seconds with exit status 0 (successful).
+  INFO [43ffd55a] Running /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/releases/20170320072901 as app@eastberlin.seguridadweb.online
+ DEBUG [43ffd55a] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env mkdir -p /srv/http/blog.seguridadweb.online/releases/20170320072901 )
+  INFO [43ffd55a] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [ef051b22] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/http/blog.seguridadweb.online/releases/20170320072901 as app@eastberlin.seguridadweb.online
+ DEBUG [ef051b22] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/http/blog.seguridadweb.online/releases/20170320072901 )
+  INFO [ef051b22] Finished in 1.121 seconds with exit status 0 (successful).
+ DEBUG [bab10e88] Running if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [bab10e88] Command: if test ! -d /srv/http/blog.seguridadweb.online/repo; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/repo'" 1>&2; false; fi
+ DEBUG [bab10e88] Finished in 0.543 seconds with exit status 0 (successful).
+ DEBUG [85a5e96c] Running /usr/bin/env git rev-list --max-count=1 master as app@eastberlin.seguridadweb.online
+ DEBUG [85a5e96c] Command: cd /srv/http/blog.seguridadweb.online/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/srv/http/blog.seguridadweb.online/tmp/git-ssh-blog.seguridadweb.online-production-a.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [85a5e96c] 	dc5227eb94aceef77dadfff81138db628d91c776
+ DEBUG [85a5e96c] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [cc1bce6a] Running if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072901; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072901'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [cc1bce6a] Command: if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072901; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072901'" 1>&2; false; fi
+ DEBUG [cc1bce6a] Finished in 0.545 seconds with exit status 0 (successful).
+  INFO [1d0f9ac6] Running /usr/bin/env echo "dc5227eb94aceef77dadfff81138db628d91c776" >> REVISION as app@eastberlin.seguridadweb.online
+ DEBUG [1d0f9ac6] Command: cd /srv/http/blog.seguridadweb.online/releases/20170320072901 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env echo "dc5227eb94aceef77dadfff81138db628d91c776" >> REVISION )
+  INFO [1d0f9ac6] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG [7f1aa9a9] Running if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072901; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072901'" 1>&2; false; fi as app@eastberlin.seguridadweb.online
+ DEBUG [7f1aa9a9] Command: if test ! -d /srv/http/blog.seguridadweb.online/releases/20170320072901; then echo "Directory does not exist '/srv/http/blog.seguridadweb.online/releases/20170320072901'" 1>&2; false; fi
+ DEBUG [7f1aa9a9] Finished in 0.553 seconds with exit status 0 (successful).
+  INFO [743cdd9a] Running /usr/bin/env jekyll build as app@eastberlin.seguridadweb.online
+ DEBUG [743cdd9a] Command: cd /srv/http/blog.seguridadweb.online/releases/20170320072901 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.3" ; /usr/bin/env jekyll build )
+ DEBUG [743cdd9a] 	/usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/spec_set.rb:87:in `block in materialize'
+ DEBUG [743cdd9a] 	: 
+ DEBUG [743cdd9a] 	Could not find addressable-2.4.0 in any of the sources
+ DEBUG [743cdd9a] 	 (
+ DEBUG [743cdd9a] 	Bundler::GemNotFound
+ DEBUG [743cdd9a] 	)
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/spec_set.rb:80:in `map!'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/spec_set.rb:80:in `materialize'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/definition.rb:176:in `specs'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/definition.rb:235:in `specs_for'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/definition.rb:224:in `requested_specs'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:118:in `block in definition_method'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:19:in `setup'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler.rb:100:in `setup'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/jekyll-3.4.2/lib/jekyll/plugin_manager.rb:36:in `require_from_bundler'
+ DEBUG [743cdd9a] 		from /usr/lib/ruby/gems/2.4.0/gems/jekyll-3.4.2/exe/jekyll:9:in `<top (required)>'
+ DEBUG [743cdd9a] 		from /usr/bin/jekyll:22:in `load'
+ DEBUG [743cdd9a] 		from /usr/bin/jekyll:22:in `<main>'
