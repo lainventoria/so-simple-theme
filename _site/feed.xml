@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-20T05:03:18-03:00</updated><id>http://localhost:4000/</id><title type="html">Seguridad Web Online</title><subtitle>En SegWeb protejemos su sitio web y cuidamos su negocio online.</subtitle><entry><title type="html">¿Qué son las listas negras y cómo saber si mi sitio está en alguna?</title><link href="http://localhost:4000/articulos/listas-negras-blacklists/" rel="alternate" type="text/html" title="¿Qué son las listas negras y cómo saber si mi sitio está en alguna?" /><published>2017-03-20T00:00:00-03:00</published><updated>2017-03-20T00:00:00-03:00</updated><id>http://localhost:4000/articulos/listas-negras-blacklists</id><content type="html" xml:base="http://localhost:4000/articulos/listas-negras-blacklists/">&lt;p&gt;Cuando navegas por Internet puedes infectarte a travez  de sitios maliciosos
+o infectados. Por esta razón diferentes organizaciones han empezado a utilizar
+listas negras para alertar a los usuarios y servicios de internet sobre estos
+sitios.&lt;/p&gt;
+
+&lt;p&gt;Cuando algún buscador o antivirus detecta una infección en su sitio informa a
+las diferentes listas negras, las cuales alertan a sus subscriptores.&lt;/p&gt;
+
+&lt;p&gt;Caer en una lista negra causará que el sitio deje de aparecer en los
+resultados de buscadores, pierda ranking, sufra suspensiones en sus
+campañas de publicidades y las visitas reciban alertas advirtiendole
+de los peligros de ingresar al sitio. Muchos usuarios no sabrán como
+saltear este alerta por lo que pensarán que el sitio está roto y quienes
+sepan dudarán en ingresar por miedo a sufrir una infección por un virus.&lt;/p&gt;
+
+&lt;p&gt;Si un sitio aparece en una lista negra significa que probablemente haya sido
+vulnerado y los atacantes lo estén utilizando para distribuir spam o malware.&lt;/p&gt;
+
+&lt;p&gt;En caso de que su sitio fuera vulnerado es necesario recuperar los archivos
+y base de datos desde un backup limpio, actualizar el sistema para asegurarlo
+y cambiar todas las contraseñas de acceso.&lt;/p&gt;
+
+&lt;p&gt;¿Está su sitio en una lista negra? Sépalo ahora.&lt;/p&gt;</content><author><name>Andrés</name></author><category term="Blacklists" /><category term="Limpieza" /><summary type="html">Caer en una lista negra puede afectar tus visitas y campañas, pero puede ser síntoma de algo peor.</summary></entry><entry><title type="html">Firewall para Aplicación Web (WAF)</title><link href="http://localhost:4000/articulos/firewall-aplicacion-web/" rel="alternate" type="text/html" title="Firewall para Aplicación Web (WAF)" /><published>2017-03-15T00:00:00-03:00</published><updated>2017-03-15T00:00:00-03:00</updated><id>http://localhost:4000/articulos/firewall-aplicacion-web</id><content type="html" xml:base="http://localhost:4000/articulos/firewall-aplicacion-web/">&lt;p&gt;Los Firewall para Aplicación Web (WAF por su sigla en inglés Web Application Firewall)
+actuan de filtro entre su web y los visitantes, analizando las consultas contra
+patrones conocidos bloqueando los ataques aunque nuestra aplicación sea vulnerable.&lt;/p&gt;
+
+&lt;p&gt;La importancia de un firewall reside en ser una linea más de defensa para mitigar
+el peligro de las fallas de seguridad y dificultar su utilización por un atacante.&lt;/p&gt;</content><author><name>Fer</name></author><category term="Firewall" /><category term="Prevención" /><summary type="html">Los Firewall Web interceptan cada consulta a su sitio y la analizan para identificar y bloquear los ataques.</summary></entry><entry><title type="html">Como proteger mi sitio Wordpress</title><link href="http://localhost:4000/articulos/wordpress/" rel="alternate" type="text/html" title="Como proteger mi sitio Wordpress" /><published>2017-03-09T00:00:00-03:00</published><updated>2017-03-09T00:00:00-03:00</updated><id>http://localhost:4000/articulos/wordpress</id><content type="html" xml:base="http://localhost:4000/articulos/wordpress/">&lt;p&gt;Wordpress es un sistema de gestión de contenidos (CMS)
+que por su facilidad de uso, flexibilidad y diversidad de complementos
+ha alcanzado gran popularidad. De acuerdo a W3Techs uno de cada 4 sitios lo
+utiliza y es el gestor más utilizado, con un 58% del mercado de gestores.&lt;/p&gt;
+
+&lt;p&gt;Como es usual en la seguridad informática los sistemas más populares
+atraen mayor atención tanto para bien como para mal. Mientras que el
+mayor uso lleva a que se descubran y corrigan los errores más rápidamente,
+los atacantes centran sus esfuerzos en estas plataformas ya que le
+permiten un mayor impacto. Por esto es importante (aunque no suficiente)
+mantener estos sistemas actualizados.&lt;/p&gt;
+
+&lt;h2 id=&quot;soluciones-segweb-para-wordpress&quot;&gt;Soluciones SegWeb para Wordpress&lt;/h2&gt;
+
+&lt;p&gt;Otras medidas que pueden aydar a prevenir y mitigar intrusiones son una
+correcta configuración de los permisos de escritura/lectura de los diferentes
+archivos que componen el sitio web, así como la utilización de sistemas de
+detección y bloqueo de ataques compuestos por cortafuegos, antivirus y sistemas
+de detección de intrusos.&lt;/p&gt;
+
+&lt;p&gt;Los sistemas de detección y bloqueo pueden instalarse tanto en el servidor que
+aloje la página web (hosting) o utilizar un servidor externo. En el caso de utilizar un
+servidor externo, es éste quien recibe todos los pedidos de información, los analiza,
+detecte cuales de estos pedidos son maliciosos, y transmite al alojamiento principal
+sólo aquellos pedidos de información de bajo riesgo. Este servicio de seguridad
+utilizando un servidor externo se conoce como
+&lt;a href=&quot;articulos/firewall-aplicacion-web&quot;&gt;Firewall para Aplicación Web (WAF)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Asi mismo es importante hacer una revisión manual de los complementos (plugins) y
+plantillas que utilize el sitio WordPress ya que muchas veces son puntos débiles que,
+por falta de mantenimiento o baja calidad técnica del código, permiten el acceso a
+visitantes no deseados.&lt;/p&gt;
+
+&lt;p&gt;¿Esta actualizado su sitio Wordpress? Sépalo ahora.&lt;/p&gt;</content><author><name>fauno</name></author><category term="CMS" /><category term="Wordpress" /><summary type="html">Wordpress es el gestor de contenidos más popular y lo utiliza una de cada 4 webs. Asegure el suyo hoy frente a ataques.</summary></entry><entry><title type="html">Inyección SQL ¿Cómo proteger nuestras bases de datos?</title><link href="http://localhost:4000/articulos/inyeccion-sql/" rel="alternate" type="text/html" title="Inyección SQL ¿Cómo proteger nuestras bases de datos?" /><published>2017-02-17T00:00:00-03:00</published><updated>2017-02-17T00:00:00-03:00</updated><id>http://localhost:4000/articulos/inyeccion-sql</id><content type="html" xml:base="http://localhost:4000/articulos/inyeccion-sql/">&lt;h2 id=&quot;qu-es&quot;&gt;¿Qué es?&lt;/h2&gt;
+
+&lt;p&gt;Los ataques de inyección SQL aprovechan la falta de sanitización
+de datos ingresados por el usuario para manipular las consultas a
+la base de datos y obtener datos a los que de otra forma no tendrían
+acceso.&lt;/p&gt;
+
+&lt;h2 id=&quot;alcance&quot;&gt;Alcance&lt;/h2&gt;
+
+&lt;p&gt;Es una de las vulnerabilidades más explotadas en la web por varias
+razones. Ocurre frecuentemente, ya sea por descuido o desconocimiento,
+es relativamente fácil de detectar y permite escalar privilegios en el
+servidor hasta tomar el control total.&lt;/p&gt;
+
+&lt;p&gt;Abusando una de estas vulnerabilidades los atacantes pueden obtener credenciales
+de acceso, copiar la base de datos completa o crear archivos en el servidor
+para ejecutar código malicioso.&lt;/p&gt;
+
+&lt;h2 id=&quot;deteccin&quot;&gt;Detección&lt;/h2&gt;
+
+&lt;p&gt;Una forma fácil de saber si una web es vulnerable a una inyección SQL muy
+evidente, es agregar una comilla simple a un valor en una dirección URL. Si
+nos muestra un error o no carga correctamente el sitio es probablemente vulnerable
+y necesita ser corregido de inmediato.&lt;/p&gt;
+
+&lt;p&gt;https://www.misitioweb.com/?id=123’&lt;/p&gt;
+
+&lt;h2 id=&quot;soluciones&quot;&gt;Soluciones&lt;/h2&gt;
+
+&lt;p&gt;Para arreglar una web vulnerable es necesario modificarla para que sanitice
+los datos cada vez que hace una llamada a la base de datos. Si utiliza un
+&lt;a href=&quot;/articulos/wordpress&quot;&gt;manejador de contenidos (CMS) actualice el sistema&lt;/a&gt; y componentes a su última
+versión.&lt;/p&gt;
+
+&lt;p&gt;También puede optar por Firewalls de Aplicación y Sistemas de Detección de
+Intrusos (IDS) que detecten y prevengan este tipo de ataques aún cuando
+existan estas vulnerabilidades.&lt;/p&gt;
+
+&lt;p&gt;En caso de que su sitio fuera vulnerado es necesario recuperar los archivos
+y base de datos desde un backup limpio, actualizar el sistema y cambiar las
+contraseñas de todos los usuarios. Si el objetivo de los atacantes era enviar
+spam o infectar usuarios con virus es probable que haya que
+&lt;a href=&quot;/articulos/listas-negras-blacklists&quot;&gt;sacar al sitio de diferentes listas negras&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;¿Es su web vulnerable a ataques SQLi?
+&lt;a href=&quot;https://seguridadweb.online/contacto.html&quot;&gt;Pida un análisis de seguridad hoy&lt;/a&gt;.&lt;/p&gt;</content><author><name>aza</name></author><category term="SQLi" /><category term="Vulnerabilidades" /><summary type="html">Los ataques SQLi son de los más comunes y pueden comprometer tu sistema y los datos de tus clientes.</summary></entry><entry><title type="html">Bienvenidos a nuestro Blog</title><link href="http://localhost:4000/blog/nuevo-blog/" rel="alternate" type="text/html" title="Bienvenidos a nuestro Blog" /><published>2017-02-15T00:00:00-03:00</published><updated>2017-02-15T00:00:00-03:00</updated><id>http://localhost:4000/blog/nuevo-blog</id><content type="html" xml:base="http://localhost:4000/blog/nuevo-blog/">&lt;p&gt;Bienvenidos a nuestro blog. Aquí publicaremos las novedades de nuestros productos de seguridad asi como las noticias sobre nuevas vulnerabilidades, herramientas o hechos de interes en el mundo de la seguridad web.&lt;/p&gt;
+
+&lt;p&gt;En nuestra sección de artículos podrán acceder a una lista de temás de interés e información general que lo guiarán en el descubrimiento de sus necesidades de seguridad.&lt;/p&gt;</content><author><name>aza</name></author><category term="comunicacion" /><summary type="html">Este medio nos permite mantenerlos al tanto de las noticias en seguridad web y armar una rica base de conocimiento para nuestros clientes.</summary></entry></feed>
