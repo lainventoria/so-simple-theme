@@ -3,7 +3,7 @@
   
     {
       "title"			: "¿Qué son las listas negras y cómo saber si mi sitio está en alguna?",
-      "link"			: "http://localhost:4000/articulos/listas-negras-blacklists/",
+      "link"			: "https://blog.seguridadweb.online/articulos/listas-negras-blacklists/",
       "excerpt"		: "Caer en una lista negra puede afectar tus visitas y campañas, pero puede ser síntoma de algo peor."
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Firewall para Aplicación Web (WAF)",
-      "link"			: "http://localhost:4000/articulos/firewall-aplicacion-web/",
+      "link"			: "https://blog.seguridadweb.online/articulos/firewall-aplicacion-web/",
       "excerpt"		: "Los Firewall Web interceptan cada consulta a su sitio y la analizan para identificar y bloquear los ataques."
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Como proteger mi sitio Wordpress",
-      "link"			: "http://localhost:4000/articulos/wordpress/",
+      "link"			: "https://blog.seguridadweb.online/articulos/wordpress/",
       "excerpt"		: "Wordpress es el gestor de contenidos más popular y lo utiliza una de cada 4 webs. Asegure el suyo hoy frente a ataques."
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Inyección SQL ¿Cómo proteger nuestras bases de datos?",
-      "link"			: "http://localhost:4000/articulos/inyeccion-sql/",
+      "link"			: "https://blog.seguridadweb.online/articulos/inyeccion-sql/",
       "excerpt"		: "Los ataques SQLi son de los más comunes y pueden comprometer tu sistema y los datos de tus clientes."
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Bienvenidos a nuestro Blog",
-      "link"			: "http://localhost:4000/blog/nuevo-blog/",
+      "link"			: "https://blog.seguridadweb.online/blog/nuevo-blog/",
       "excerpt"		: "Este medio nos permite mantenerlos al tanto de las noticias en seguridad web y armar una rica base de conocimiento para nuestros clientes."
     }
   
